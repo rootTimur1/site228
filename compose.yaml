@@ -1,0 +1,6 @@
+services:
+  hello-site:
+    build: .
+    container_name: hello-site
+    ports:
+      - "3000:3000"

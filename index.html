@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hello World</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, #0f172a, #1e293b, #334155);
+      font-family: Arial, sans-serif;
+      overflow: hidden;
+    }
+
+    .title {
+      font-size: clamp(56px, 12vw, 140px);
+      font-weight: 800;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 6px;
+      text-shadow:
+        0 0 10px rgba(255,255,255,0.25),
+        0 0 20px rgba(59,130,246,0.35),
+        0 0 40px rgba(59,130,246,0.25);
+      animation: glow 2.5s ease-in-out infinite alternate;
+    }
+
+    @keyframes glow {
+      from {
+        transform: scale(1);
+        text-shadow:
+          0 0 10px rgba(255,255,255,0.2),
+          0 0 20px rgba(59,130,246,0.3),
+          0 0 40px rgba(59,130,246,0.2);
+      }
+      to {
+        transform: scale(1.03);
+        text-shadow:
+          0 0 20px rgba(255,255,255,0.35),
+          0 0 30px rgba(96,165,250,0.5),
+          0 0 60px rgba(96,165,250,0.35);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="title">Hello World</div>
+</body>
+</html>
